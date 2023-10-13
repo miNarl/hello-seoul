@@ -1,0 +1,200 @@
+header {
+  z-index: 100;
+  position: fixed;
+  width: 100%;
+  color: white;
+  background: transparent;
+}
+header .header_in {
+  max-width: 1240px;
+  margin: auto;
+  height: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .header_in span {
+  font-size: 2em;
+  font-weight: bold;
+}
+header nav:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+header nav ul li {
+  float: left;
+}
+header nav ul li a {
+  display: block;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: bold;
+}
+header nav ul li a:hover {
+  color: #af9af0;
+}
+header.on {
+  background: rgba(0, 0, 0, 0.3);
+  color: black;
+}
+header.on .header_in {
+  height: 50px;
+}
+header.on h1 i {
+  font-size: 1em;
+}
+header.on h1 span {
+  font-size: 1.5em;
+}
+header.on ul > li > a {
+  padding: 15px;
+  font-size: 14px;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+section h2 {
+  font-size: 3rem;
+}
+
+#s1 {
+  background: orange;
+  height: 100vh;
+}
+#s1 .main_text {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-40vw, -50%);
+  color: white;
+  white-space: nowrap;
+  z-index: 100;
+}
+#s1 .main_text h2 {
+  font-size: clamp(20px, 3vw, 80px);
+  margin-bottom: clamp(200px, 20vw, 200px);
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+}
+#s1 .main_text p {
+  font-size: clamp(14px, 3vw, 40px);
+  margin-left: clamp(100px, 20vw, 40px);
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+}
+
+#s1 video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#s2 {
+  background: white;
+  height: 1080px;
+}
+
+#s3 {
+  background: lightgreen;
+  height: 1080px;
+}
+
+#s4 {
+  background: lightpink;
+  height: 1080px;
+}
+
+#s5 {
+  background: lightsalmon;
+  height: 1080px;
+}
+
+#s6 {
+  background: lightgoldenrodyellow;
+  height: 1080px;
+}
+
+.trigger, .close {
+  display: none;
+}
+
+footer {
+  width: 100%;
+  height: 200px;
+  background: gray;
+}
+
+@media (max-width: 989px) {
+  header .header_in {
+    width: 100%;
+    height: 80px;
+  }
+  header .header_in h1 {
+    font-size: 1em;
+    margin-left: 20px;
+  }
+  header .header_in h1 span {
+    font-size: 1.6em;
+  }
+  a {
+    padding: 12px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 760px) {
+  header nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    bottom: 0;
+    width: 300px;
+    background: #fff;
+    z-index: 101;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+    transition: 0.5s ease-in;
+    color: #000;
+  }
+  header nav.active {
+    right: 0;
+  }
+  header nav ul {
+    padding: 100px 0 0 50px;
+  }
+  header nav ul > li {
+    float: none;
+  }
+  header nav ul > li > a {
+    padding: 20px;
+    font-size: 20px;
+  }
+  header .close {
+    display: block;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    background: transparent;
+  }
+  header .close i {
+    font-size: 30px;
+  }
+  header .trigger {
+    display: block;
+  }
+  header .trigger i {
+    font-size: 20px;
+  }
+  header.on {
+    background: rgba(0, 0, 0, 0.3);
+    color: black;
+  }
+  header.on nav ul > li > a {
+    padding: 20px;
+    font-size: 20px;
+  }
+}/*# sourceMappingURL=main.css.map */

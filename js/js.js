@@ -37,3 +37,4 @@ navLinks.forEach((link, index) => {
 
   });
 });
+

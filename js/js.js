@@ -3,7 +3,8 @@ const header = document.querySelector('header');
 
 window.addEventListener('scroll', function(){
   if(window.scrollY > 800){
-    header.classList.add('on');}  
+    header.classList.add('on');} 
+    
   if( window.scrollY <= 800){
     header.classList.remove('on');
   }
@@ -37,3 +38,21 @@ navLinks.forEach((link, index) => {
 
   });
 });
+
+// 김지선 메인 (명소부분 ) js
+var swiper = new Swiper(".mySwiper", {
+  loop:true,
+  autoplay: {
+    delay:3000,
+    disableOnInteraction: false
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    type: "fraction",
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+// 여기까지

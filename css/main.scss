@@ -1,3 +1,4 @@
+
 header {
     z-index:100;
     position:fixed;
@@ -31,6 +32,7 @@ header {
     ul > li > a {padding:15px; font-size:14px;}
 }
 }
+.trigger , .close {display:none;}
 
 
 section {
@@ -44,7 +46,7 @@ section {
 #s1 {background:orange; height:100vh;
     .main_text {position:absolute; top:80%; left:50%; 
         transform:translate(-40vw, -50%); color:white; white-space:nowrap;
-    z-index:100; margin-bottom:clamp(50px, 3vw, 80px)
+    z-index:99; margin-bottom:clamp(50px, 3vw, 80px);
     h2 {font-size:clamp(20px, 3vw, 80px);
         margin-bottom:clamp(200px, 20vw, 200px); 
         text-shadow:0 0 10px rgba(0,0,0,50%);
@@ -56,53 +58,130 @@ section {
     }
 }
 #s1 video {width:100%; height:100%; object-fit:cover;}
-#s2 {background:white; height:1080px;}
+
+// 김지선 main (명소부분) scss
+#s2 {background:white; height:1080px; width:100%; display:inline-block; 
+    padding:3px;
+    .right {width:30%; height:1080px; float:right;
+        h2 {display:flex; justify-content:center; font-weight:bold;
+        margin-top:50%; font-size:clamp(25px, 3vw, 80px);}
+        p {display:flex; justify-content:center; margin-top:40%;
+        font-size:clamp(15px,3vw,20px); font-weight:bold;
+        text-align: center;}
+        span {display:flex; justify-content:center;
+        margin-top:10%; text-decoration:underline; font-size:17px;
+    color:gray;}
+    }  
+    .left {width:70%; height:1080px;  
+        .main_img {object-fit:cover;}
+     
+}
+
+}
+.swiper {
+    width:100%;
+    height:100%;
+    }
+
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit:fill;
+  }
+
+  .swiper_text {position:absolute; bottom:90px; left:20px; color:#fff;
+    h4 {font-size:30px; font-weight:bold; text-shadow:0 0 10px rgba(0,0,0,50%);}
+}
+.swiper-button-prev, .swiper-button-next {
+    color:white;
+    background:rgba(255,255,255,.4);
+    width:36px;
+    height:36px;
+    border-radius:50%;}
+    .swiper-button-prev:after , .swiper-button-next:after {
+        font-size:20px;
+    }    
+    .swiper-pagination-fraction {
+        color:white;
+        width:auto;
+        left:90%;
+        bottom:20px;
+        top:auto;
+        padding:0 5px;
+        border-radius:9999px;
+        font-size:11px;
+        line-height: 1.65;
+        background:rgba(0,0,0,0.5);
+    }
+// 여기까지 김지선 메인 (명소) 부분
+
 #s3 {background:lightgreen; height:1080px;}
 #s4 {background:lightpink; height:1080px;}
 #s5 {background:lightsalmon; height:1080px;}
 #s6 {background:lightgoldenrodyellow; height:1080px;}
 
 
-.trigger , .close {display:none;}
+
 
 
 footer {width:100%; height:200px; background:gray;}
 
+
+// 헤더부분, 김지선 메인 (명소부분)
 @media (max-width:1000px){
     header {
     .header_in {
         width:100%; height:80px;
         h1 {
             font-size:1em; margin-left:20px;
-            span {font-size:1.6em;}
+            span {font-size:1.6em;
+            img {width:250px;}}
         }
     }
 }
-    a {padding:12px; font-size:16px;;}
+    a {padding:12px; font-size:16px;}
+    #s2 {width:100%;
+        .swiper-button-prev, .swiper-button-next {margin-top:130px;}
+    .left {width:100%; height:80%; position: relative; top:-200px;
+        .main_img {object-fit:contain;}}
+    .right{width:100%; height:20%; position: relative; top:300px;
+        p {margin-top:50px;}
+        span {margin-top:20px;}
+    }    
 }
-
 
 @media (max-width:830px) {
     header {
         nav {position:fixed; 
             top:0; right:-100%; 
             bottom:0; width:300px;
-            background:#fff;
-            z-index:101;
+            background:#473970;
+            z-index:999;
             box-shadow:0 0 50px rgba(0,0,0,50%);
-            transition:0.5s ease-in; color:#000;
+            transition:0.5s ease-in;
         &.active {right:0;}
         ul {
             padding:100px 0 0 50px;
             > li { float:none;
-            > a {padding:20px; font-size:20px;}
+            > a {padding:20px; font-size:20px; color:white;}
             }
         }}
         .close{
             display:block;
             position:absolute; 
             left:10px; top:10px; background:transparent;
-            i {font-size:30px;}
+            i {font-size:30px; color:white;}
         }
         .trigger {display:block;
             i {font-size:20px;}
@@ -110,9 +189,21 @@ footer {width:100%; height:200px; background:gray;}
         &.on {background:rgba(0,0,0,0.3); color:black;
             nav ul > li > a {padding:20px; font-size:20px;}
         }
-        
     } 
+    #s2 { width:100%;
+        .swiper-button-prev, .swiper-button-next {margin-top:270px;}}
+    .left {
+    .swiper {width:100%; height:100%; position: relative; top:-60px;
+        }
+       }
+    .right { margin-top: 110px;
+        h2 {position:relative; top:30px;}
+        p {position:relative; top:40px;}
+        span {position:relative; top:50px;}
+    }
 }
+}
+/******************* 여기까지 김지선 메인********************/
 
   /*********** 이종민 푸터 ************/
   footer {
@@ -182,7 +273,6 @@ footer {width:100%; height:200px; background:gray;}
 
   
     @media ( max-width:1169px){
-        .link_wrap { display: none;}
       footer { width:952px; } 
     } 
   

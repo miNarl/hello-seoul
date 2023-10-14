@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>seoul</title>
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script defer src="js/js.js"></script>
 </head>
 <body>
@@ -46,25 +48,43 @@
       </div>
 
   </section>
+  <!-- 김지선 메인(명소부분)-->
   <section id="s2">
-    <h2>명소관련</h2>
-    <div class="btnDown"></div>
+    <div class="right">
+      <h2>명소(名所)</h2>
+      <p>서울의 아름답고 특별한 명소들을 살펴보세요.</p>
+      <a href="#"><span>view more</span></a>
+    </div>
+    <div class="left">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="img/namsantower.jpg" alt="" class="main_img">
+          </div>
+          <div class="swiper-slide"><img src="img/lottetower.jpg" alt="" class="main_img">
+  
+          </div>
+          <div class="swiper-slide"><img src="img/63building.jpg" alt="" class="main_img">
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div> 
+    </div>
   </section>
+  <!-- 닫히는 section 부분까지 명소부분 -->
   <section id="s3">
     <h2>음식관련</h2>
-    <div class="btnDown"></div>
   </section>
   <section id="s4">
     <h2>쇼핑관련</h2>
-    <div class="btnDown"></div>
   </section>
   <section id="s5">
     <h2>엔터테인먼트관련</h2>
-    <div class="btnDown"></div>
   </section>
   <section id="s6">
     <h2>자연&관광관련</h2>
-    <div class="btnDown"></div>
   </section>
 
   <!-- 이종민 푸터 -->

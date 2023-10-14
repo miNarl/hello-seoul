@@ -131,7 +131,7 @@ footer {
   background: gray;
 }
 
-@media (max-width: 989px) {
+@media (max-width: 1000px) {
   header .header_in {
     width: 100%;
     height: 80px;
@@ -148,7 +148,7 @@ footer {
     font-size: 16px;
   }
 }
-@media (max-width: 760px) {
+@media (max-width: 830px) {
   header nav {
     position: fixed;
     top: 0;
@@ -174,20 +174,20 @@ footer {
     padding: 20px;
     font-size: 20px;
   }
-  header .close i {
+  header .close {
     display: block;
     position: absolute;
     left: 10px;
     top: 10px;
     background: transparent;
   }
-  header .close i i {
+  header .close i {
     font-size: 30px;
   }
-  header .trigger i {
+  header .trigger {
     display: block;
   }
-  header .trigger i i {
+  header .trigger i {
     font-size: 20px;
   }
   header.on {
@@ -199,6 +199,7 @@ footer {
     font-size: 20px;
   }
 }
+/*********** 이종민 푸터 ************/
 footer {
   background: #333; /* 배경색 설정 */
   color: white; /* 폰트 색상 설정 */
@@ -222,7 +223,6 @@ footer .social-icons {
   margin-top: 20px; /* 소셜 아이콘 상단 여백 설정 */
 }
 
-/*********** 이종민 푸터 ************/
 .footer_container {
   background: #464646;
   padding: 10px 0;
@@ -288,6 +288,9 @@ footer::after {
 }
 
 @media (max-width: 1169px) {
+  .link_wrap {
+    display: none;
+  }
   footer {
     width: 952px;
   }

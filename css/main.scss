@@ -68,24 +68,23 @@ section {
 
 footer {width:100%; height:200px; background:gray;}
 
-@media (max-width:989px){
+@media (max-width:1000px){
     header {
     .header_in {
         width:100%; height:80px;
-            h1 {
+        h1 {
             font-size:1em; margin-left:20px;
             span {font-size:1.6em;}
-            }
         }
     }
+}
     a {padding:12px; font-size:16px;;}
 }
 
 
-@media (max-width:760px) {
+@media (max-width:830px) {
     header {
-        nav {
-            position:fixed; 
+        nav {position:fixed; 
             top:0; right:-100%; 
             bottom:0; width:300px;
             background:#fff;
@@ -95,20 +94,17 @@ footer {width:100%; height:200px; background:gray;}
         &.active {right:0;}
         ul {
             padding:100px 0 0 50px;
-            > li { 
-                float:none;
+            > li { float:none;
             > a {padding:20px; font-size:20px;}
             }
-        }
-    }
-
-        .close i {
+        }}
+        .close{
             display:block;
             position:absolute; 
             left:10px; top:10px; background:transparent;
             i {font-size:30px;}
         }
-        .trigger i {display:block;
+        .trigger {display:block;
             i {font-size:20px;}
         }
         &.on {background:rgba(0,0,0,0.3); color:black;
@@ -118,7 +114,8 @@ footer {width:100%; height:200px; background:gray;}
     } 
 }
 
-footer {
+  /*********** 이종민 푸터 ************/
+  footer {
     background: #333; /* 배경색 설정 */
     color: white; /* 폰트 색상 설정 */
     padding: 20px 0; /* 내부 여백 설정 */
@@ -141,7 +138,6 @@ footer {
     margin-top: 20px; /* 소셜 아이콘 상단 여백 설정 */
   }
 
-  /*********** 이종민 푸터 ************/
 .footer_container {
     background:#464646; padding:10px 0;
   }
@@ -186,6 +182,7 @@ footer {
 
   
     @media ( max-width:1169px){
+        .link_wrap { display: none;}
       footer { width:952px; } 
     } 
   
@@ -203,4 +200,3 @@ footer {
         margin-left: 0;  }
     }
     /*********** 이종민 푸터 ************/
-  

@@ -3,15 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>seoul</title>
+    <title>hello-seoul</title>
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script defer src="js/js.js"></script>
 </head>
 <body>
+  <script>AOS.init();</script>
   <header>
     <div class="header_in">
       <h1>
@@ -74,12 +78,40 @@
     </div>
   </section>
   <!-- 닫히는 section 부분까지 명소부분 -->
+
+  <!--김유리 메인(음식부분)-->
   <section id="s3">
-    <h2>음식관련</h2>
+    <h2>음식</h2><br>
+    <p>한식, 중식, 일식, 카페/디저트까지 많은 서울 맛집을 탐방해보세요!</p>
+    <a href="#"><span>view more</span></a>
+    <div class="food_wrap">
+    <div data-aos="zoom-in" data-aos-duration="1000" class="s3_b1">
+      <img src="img/food1.jpg">
+    </div>
+    <div data-aos="zoom-out" data-aos-duration="1000" class="s3_b1">
+      <img src="img/food2.jpg">
+    </div>  
+  </div>
+  <div class="food_wrap">
+    <div data-aos="zoom-in" data-aos-duration="1000" class="s3_b1">
+      <img src="img/food3.jpg">
+    </div>
+    <div data-aos="zoom-out" data-aos-duration="1000" class="s3_b1">
+      <img src="img/food4.jpg">
+    </div>
+  </div>
   </section>
+ <!-- 닫히는 section 부분까지 음식부분 -->
+
+
+ 
+
   <section id="s4">
     <h2>쇼핑관련</h2>
   </section>
+
+
+
   <section id="s5">
     <h2>엔터테인먼트관련</h2>
   </section>
@@ -91,7 +123,7 @@
   <div class="footer_container">
     <footer>
       <div class="logo">
-        <img src="img/logo.png" alt="푸터 로고">
+        <img src="img/logo_b.png" alt="푸터 로고">
         
         <p>
           03190, 서울특별시 종로구 청계천로85 (31빌딩) 6층

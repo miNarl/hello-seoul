@@ -1,12 +1,65 @@
 @charset "UTF-8";
-
 @font-face {
-  font-family: 'Pretendard-Regular';
-  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-  font-weight: 400,500,700,900;
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff") format("woff");
+  font-weight: 400;
   font-style: normal;
 }
+*, html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
 
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul, li {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
 header {
   z-index: 100;
@@ -77,7 +130,7 @@ section h2 {
 }
 
 #s1 {
-  background: #fff;
+  background: orange;
   height: 100vh;
 }
 #s1 .main_text {
@@ -106,8 +159,7 @@ section h2 {
 #s1 video {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 #s2 {
@@ -150,8 +202,7 @@ section h2 {
   height: 1080px;
 }
 #s2 .left .main_img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .swiper {
@@ -172,8 +223,7 @@ section h2 {
   display: block;
   width: 100%;
   height: 100%;
-  -o-object-fit: fill;
-     object-fit: fill;
+  object-fit: fill;
 }
 
 .swiper_text {
@@ -213,12 +263,15 @@ section h2 {
   background: rgba(0, 0, 0, 0.5);
 }
 
+#s3 {
+  background: lightgreen;
+  height: 1080px;
+}
 
-
-
-
-
-
+#s4 {
+  background: lightpink;
+  height: 1080px;
+}
 
 #s5 {
   background: lightsalmon;
@@ -268,8 +321,7 @@ footer {
     top: -200px;
   }
   #s2 .left .main_img {
-    -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
   }
   #s2 .right {
     width: 100%;
@@ -364,73 +416,6 @@ footer {
   }
 }
 /******************* 여기까지 김지선 메인********************/
-
-
-/****** 김유리 메인(음식) ******/
-#s3 {  
-  position:relative;
-  height: 1080px;
-  width: 100%;
-  display: inline-block;
-  padding: 40px;
-}
-
-#s3 h2 { 
-  color:#473970;
-  text-align: center;
-  font-weight: bold;
-}
-
-#s3 p {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-  font-size: clamp(15px, 3vw, 20px);
-  font-weight: bold;
-  text-align: center;
-}
-
-#s3 .food_wrap {
-  justify-content: center;
-}
-
-#s3 span {
-  display: flex;
-  justify-content: center;
-  text-decoration: underline;
-  font-size: 17px;
-  color: gray; 
-  padding: 40px;
-}
-
-#s3 img { 
-  display: flex;
-  justify-content: center;
-  width:400px; 
-  height:300px;}
-
-  .food_wrap { display:flex; }
-  .s3_b1 { flex-direction: row-reverse; }
-
-/*****s4 메인(쇼핑) *****/
-
-  #s4 {  
-    position:relative;
-    height: 1080px;
-    width: 100%;
-    display: inline-block;
-    padding: 40px;
-  }
-
-  #s4 h2 { 
-    color:#473970;
-    text-align: center;
-    font-weight: bold;
-  }
-
-
-
-
 /*********** 이종민 푸터 ************/
 footer {
   background: #333; /* 배경색 설정 */
@@ -544,4 +529,6 @@ footer::after {
     margin-left: 0;
   }
 }
-/*********** 이종민 푸터 ************//*# sourceMappingURL=main.css.map */
+/*********** 이종민 푸터 ************/
+
+/*# sourceMappingURL=main.css.map */

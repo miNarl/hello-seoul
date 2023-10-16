@@ -416,6 +416,71 @@ footer {
   }
 }
 /******************* 여기까지 김지선 메인********************/
+
+/****** 김유리 메인(음식) ******/
+#s3 {  
+  position:relative;
+  height: 1080px;
+  width: 100%;
+  display: inline-block;
+  padding: 40px;
+}
+
+#s3 h2 { 
+  color:#473970;
+  text-align: center;
+  font-weight: bold;
+}
+
+#s3 p {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  font-size: clamp(15px, 3vw, 20px);
+  font-weight: bold;
+  text-align: center;
+}
+
+#s3 .food_wrap {
+  justify-content: center;
+}
+
+#s3 span {
+  display: flex;
+  justify-content: center;
+  text-decoration: underline;
+  font-size: 17px;
+  color: gray; 
+  padding: 40px;
+}
+
+#s3 img { 
+  display: flex;
+  justify-content: center;
+  width:400px; 
+  height:300px;}
+
+  .food_wrap { display:flex; }
+  .s3_b1 { flex-direction: row-reverse; }
+
+/*****s4 메인(쇼핑) *****/
+
+  #s4 {  
+    position:relative;
+    height: 1080px;
+    width: 100%;
+    display: inline-block;
+    padding: 40px;
+  }
+
+  #s4 h2 { 
+    color:#473970;
+    text-align: center;
+    font-weight: bold;
+  }
+
+
+
 /*********** 이종민 푸터 ************/
 footer {
   background: #333; /* 배경색 설정 */
